@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xind.xindassistant.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_on"
+        android:ems="5"
+        android:layout_marginStart="@dimen/start_padding_size"
+        android:layout_marginTop="@dimen/start_padding_size"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/onTimeBtn"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:onClick="showTimePickerDialog"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text1"
+        app:layout_constraintLeft_toRightOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_off"
+        android:ems="5"
+        android:layout_marginTop="@dimen/start_padding_size"
+        android:layout_marginStart="@dimen/start_padding_size"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/offTimeBtn"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:onClick="showTimePickerDialog"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text2"
+        app:layout_constraintLeft_toRightOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start_padding_size"
+        android:text="@string/apply_to"
+        android:layout_marginTop="@dimen/start_padding_size"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Switch
+        android:id="@+id/dataSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/start_padding_size"
+        android:layout_marginStart="@dimen/start_padding_size"
+        android:layout_marginTop="8dp"
+        android:text="@string/data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Switch
+        android:id="@+id/WiFiSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start_padding_size"
+        android:layout_marginEnd="@dimen/start_padding_size"
+        android:layout_marginTop="8dp"
+        android:text="@string/wi_fi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataSwitch"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/applyBtn"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:onClick="apply"
+        android:text="@string/apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

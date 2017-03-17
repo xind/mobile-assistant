@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">xind assistant</string>
+    <string name="turn_on">Turn on at</string>
+    <string name="turn_off">Turn off at</string>
+    <string name="apply">Apply</string>
+    <string name="applied">Applied</string>
+    <string name="apply_to">Apply to</string>
+    <string name="data">Data</string>
+    <string name="wi_fi">Wi-Fi</string>
+</resources>
