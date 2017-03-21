@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/onTimeBtn"
+        android:id="@+id/turnOnBtn"
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/offTimeBtn"
+        android:id="@+id/turnOffBtn"
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <Switch
-        android:id="@+id/WiFiSwitch"
+        android:id="@+id/wiFiSwitch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/start_padding_size"
